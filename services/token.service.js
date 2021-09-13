@@ -6,7 +6,7 @@ async function getToken(ApplicationKey, BasicAuth) {
 
     var config = {
         method: "POST",
-        url: urlFG + urlSuffix,
+        url: urlFG + urlTokenSuffix,
         headers: {
             "Content-Type": "application/json",
             "x-ApplicationKey": ApplicationKey,
@@ -14,7 +14,7 @@ async function getToken(ApplicationKey, BasicAuth) {
         },
     };
 
-    axios(config)
+    await axios(config)
         .then(function (response) {
             tokenResult = response.data;
             TokenRepository.saveToken(response.data);

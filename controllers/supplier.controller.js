@@ -2,7 +2,7 @@ import SupplierService from "../services/supplier.service.js";
 
 async function getSupplierFG(req, res, next) {
     try {
-
+        res.send(await SupplierService.getSupplierFG());
     } catch (error) {
         next(error);
     }
@@ -33,8 +33,8 @@ async function getSupplierById(req, res, next) {
 }
 
 export default {
-    getSupplier,
-    getSupplierById,
     getSupplierFG,
-    getCarga
+    getCarga,
+    getSupplier,
+    getSupplierById
 };

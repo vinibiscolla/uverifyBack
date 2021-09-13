@@ -7,7 +7,6 @@ import { swaggerSetupDocument } from "./swagger.js";
 import tokenRouter from "./routes/token.route.js";
 import supplierRouter from "./routes/supplier.route.js";
 
-import roleRouter from "./routes/role.route.js";
 import roleWorker from "./routes/worker.route.js";
 
 const app = express();
@@ -22,7 +21,8 @@ global.roleJSONFile = "./role.json";
 global.worker = []
 global.supplier = []
 global.urlFG = "https://euxcore1.fgvms.eu";
-global.urlSuffix = "/api/oauth2/v2.0/token?grant_type=client_credentials&response_type=token";
+global.urlTokenSuffix = "/api/oauth2/v2.0/token?grant_type=client_credentials&response_type=token";
+global.urlSupplierSuffix = "/api/vc/connector/Supplier Download";
 
 global.logger = winston.createLogger({
   level: "silly",
@@ -38,7 +38,6 @@ app.use("/swagger", swaggerUi.serve, swaggerUi.setup(swaggerSetupDocument));
 app.use("/token", tokenRouter);
 app.use("/supplier", supplierRouter);
 
-app.use("/role", roleRouter);
 // app.use("/worker", roleWorker)
 
 app.use((error, req, res, next) => {
