@@ -7,3 +7,32 @@
 2021-09-13T18:47:24.298Z [base-api] info: API Started
 2021-09-13T18:48:53.474Z [base-api] info: API Started
 2021-09-13T18:48:55.795Z [base-api] info: API Started
+2021-09-13T18:56:49.419Z [base-api] info: API Started
+2021-09-13T18:59:06.289Z [base-api] info: API Started
+2021-09-13T19:03:38.563Z [base-api] info: API Started
+2021-09-13T19:06:17.208Z [base-api] info: API Started
+2021-09-13T19:08:38.078Z [base-api] info: API Started
+2021-09-13T19:08:49.971Z [base-api] info: API Started
+2021-09-13T19:08:57.966Z [base-api] info: API Started
+2021-09-13T19:09:00.738Z [base-api] info: API Started
+2021-09-13T19:09:03.906Z [base-api] error: [POST] TokenRepository.getToken is not a function at /fg-node/uverifyBack/services/token.service.js:15
+2021-09-13T19:10:07.477Z [base-api] info: API Started
+2021-09-13T19:10:10.780Z [base-api] info: API Started
+2021-09-13T19:10:26.489Z [base-api] info: API Started
+2021-09-13T19:10:31.555Z [base-api] error: [POST] config is not defined at /fg-node/uverifyBack/repositories/token.repository.js:5
+2021-09-13T19:10:44.722Z [base-api] info: API Started
+2021-09-13T19:11:40.152Z [base-api] info: API Started
+2021-09-13T19:12:11.179Z [base-api] info: API Started
+2021-09-13T19:17:12.258Z [base-api] info: API Started
+2021-09-13T19:21:46.813Z [base-api] info: API Started
+2021-09-13T19:22:19.036Z [base-api] info: API Started
+2021-09-13T19:22:39.210Z [base-api] info: API Started
+2021-09-13T19:22:57.915Z [base-api] info: API Started
+2021-09-13T19:25:22.556Z [base-api] info: API Started
+2021-09-13T19:26:18.240Z [base-api] info: API Started
+2021-09-13T19:26:52.039Z [base-api] info: API Started
+2021-09-13T19:28:55.785Z [base-api] info: API Started
+2021-09-13T19:29:52.417Z [base-api] info: API Started
+2021-09-13T19:30:23.836Z [base-api] info: API Started
+2021-09-13T19:30:32.442Z [base-api] info: API Started
+2021-09-13T19:30:38.494Z [base-api] info: API Started

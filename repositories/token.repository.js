@@ -1,12 +1,10 @@
 import { promises as fs } from "fs";
 const { readFile, writeFile } = fs;
 
-async function getToken() {
-  const data = JSON.parse(await readFile(roleJSONFile));
-
-  return data.role;
+async function saveToken(tokenObj) {
+  await writeFile("./token.json", JSON.stringify(tokenObj, null, 2));
 }
 
 export default {
-  getToken
+  saveToken
 };

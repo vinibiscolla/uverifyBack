@@ -1,7 +1,8 @@
-import TokenRepository from "../repositories/worker.repository.js";
+import TokenRepository from "../repositories/token.repository.js";
 import axios from "axios";
 
 async function getToken(ApplicationKey, BasicAuth) {
+    var tokenResult;
 
     var config = {
         method: "POST",
@@ -9,20 +10,20 @@ async function getToken(ApplicationKey, BasicAuth) {
         headers: {
             "Content-Type": "application/json",
             "x-ApplicationKey": ApplicationKey,
-            "Authorization": BasicAuth,
+            "Authorization": "Basic " + BasicAuth,
         },
     };
 
     axios(config)
         .then(function (response) {
-            console.log(JSON.stringify(response.data));
-            return JSON.stringify(response.data);
+            tokenResult = response.data;
+            TokenRepository.saveToken(response.data);
         })
         .catch(function (error) {
             console.log(error);
         });
 
-    // return await TokenRepository.getToken();
+    return tokenResult;
 }
 
 export default {

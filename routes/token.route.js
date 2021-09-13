@@ -3,6 +3,6 @@ import TokenController from "../controllers/token.controller.js";
 
 const router = express.Router();
 
-router.post("/", TokenController.getToken);
+router.get("/", TokenController.getToken);
 
 export default router;
