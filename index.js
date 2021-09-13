@@ -5,6 +5,8 @@ import swaggerUi from "swagger-ui-express";
 import { swaggerSetupDocument } from "./swagger.js";
 
 import tokenRouter from "./routes/token.route.js";
+import supplierRouter from "./routes/supplier.route.js";
+
 import roleRouter from "./routes/role.route.js";
 import roleWorker from "./routes/worker.route.js";
 
@@ -34,6 +36,7 @@ global.logger = winston.createLogger({
 app.use("/swagger", swaggerUi.serve, swaggerUi.setup(swaggerSetupDocument));
 
 app.use("/token", tokenRouter);
+app.use("/supplier", supplierRouter);
 
 app.use("/role", roleRouter);
 // app.use("/worker", roleWorker)
