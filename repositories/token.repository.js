@@ -7,8 +7,6 @@ async function getToken() {
   return data.role;
 }
 
-
-
 export default {
   getToken
 };
